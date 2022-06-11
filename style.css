@@ -1,20 +1,59 @@
+@font-face {
+    font-family: ComicNeue-Bold;
+    src: url("assets/fonts/ComicNeue-Bold.ttf");
+}
+
+html {
+    scroll-behavior: smooth; 
+}
+
 .wrapper {
     width: 800px;
     height: auto;
-    font-family: "Comic Sans MS", Arial, sans-serif;
+    font-family: "ComicNeue-Bold", Arial, sans-serif;
     margin: 0 auto;
     border-radius: 10px;
     box-shadow: 7px 11px 24px 5px rgba(221, 103, 211, 0.993);
     padding: 10px;
 }
- 
+
+.nav {
+    background-color:  rgba(221, 103, 211, 0.993);
+    border-radius: 10px;
+    padding: 10px 5px;
+    text-align: right;
+    margin: 10px;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-list li:nth-child(n+2)::before { 
+	content: "·";
+	color: white;
+}
+
+.nav-link {
+    padding: 0 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-link:hover {
+    color: rgba(255, 211, 251, 0.993);
+}
+  
 h1 {
     background-color:  rgba(221, 103, 211, 0.993);
     color: white;
     border-radius: 10px;
     padding: 10px;
     text-align: right;
-    margin: 10px;
+    margin: 10px 0;
 }
 
 .photo {
@@ -27,15 +66,51 @@ h1 {
     margin-left: 10px;
 }
 
-img {
+.photo img {
     border-radius: 10px;
+}
+
+.contacts {
+    position: absolute;
+    width: 270px;
+    height: auto;
+    margin-top: 290px;
+}
+
+.contacts-list {
+    list-style: none;
+    text-align: left;
+    margin: 5px;
+    padding-left: 15px;
+}
+
+.contacts-item {
+    margin-bottom: 2px;
+}
+
+.contacts-link {
+    text-decoration: none;
+    color:  black;
+}
+
+.fa-brands, 
+.fa-solid {
+    width: 25px;
+    text-align: center;
+    color:  rgb(70, 68, 68);
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+.fa-brands:hover, 
+.fa-solid:hover {
+	color:  rgba(221, 103, 211, 0.993);
 }
 
 .main {
     margin: 10px;
     margin-left: 300px;
-    text-align: right;
-    
+    text-align: right;  
 }
 
 h2 {
@@ -43,25 +118,24 @@ h2 {
     color:  rgba(221, 103, 211, 0.993);
     border-radius: 10px;
     padding: 10px;
-    margin: 0px;
+    margin: 0;
     text-align: right;
 }
 
-li a {
-    text-decoration: none;
-    color:  rgba(114, 83, 185, 0.993);
-}
-
-li a:hover {
+.contacts-link:hover,
+.education-link:hover,
+.experience-link:hover {
     color: rgba(221, 103, 211, 0.993);
 }
-p {
+
+.main p {
     text-align: left;
     margin: 5px;
     padding-left: 15px;
 }
 
-ul {
+.education-list,
+.skills-list {
     list-style: none;
     text-align: left;
     margin: 5px;
@@ -69,29 +143,27 @@ ul {
 }
 
 footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color:  rgba(221, 103, 211, 0.993);
     color: white;
     margin: 10px;
     border-radius: 10px;
-		padding: 10px;
-		padding-left: 15px;
-    text-align: left;
+	padding: 5px 10px 5px 15px;
 }
 
-footer a {
-	text-decoration: none;
+.my-github {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    text-decoration: none;
 }
 
-i:hover {
-	color:  rgba(114, 83, 185, 0.993);
+.my-github:hover {
+      color: rgba(255, 211, 251, 0.993);
 }
 
-.fa, .fab {
-    color: white;
-    font-size: 20px;
-    vertical-align: middle;
-}
-
-span {
-    margin-left: 7px;
+.github-icon {
+    margin-right: 10px;
 }
