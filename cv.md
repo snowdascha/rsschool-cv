@@ -1,5 +1,5 @@
 # Darya Gorbaneva
-![photo](/img/IMG_01.jpg)
+![photo](/assets/img/IMG_01.jpg)
 ##  Contact Info
 * Discord: Darya (@snowdascha)
 * Telegram: @snowdascha
